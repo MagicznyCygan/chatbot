@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Leah the Chatbot</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="bot-info-container">
+            <div class="status"><i class="fas fa-circle"></i> Leah</div>
+            <div class="more"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div id="mess-box" class="messages-container">
+            <div class="message"><span class="bot-message">Hi, I'm Leah artificial intelligence. How can I help you?</span></div>
+        </div>
+
+        <div class="input-container">
+            <div class="emoji-box"><i class="far fa-smile"></i></div>
+            <div class="input-box"><input placeholder="Type something..." id="input-field" class="input" type="text"><button class="btn" id="btn"><i class="fas fa-paper-plane"></i></button></div>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+    <script src="scripts/check-command.js"></script>
+    <script src="scripts/message-add.js"></script>
+    <script src="scripts/data.js"></script>
+</body>
+</html>
