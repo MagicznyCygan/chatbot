@@ -1,26 +1,19 @@
 const btn = document.getElementById('btn');
 const inputField = document.getElementById('input-field');
 
+const firstMessage = () => {
+    let message = `Hi, I'm Leah artificial intelligence. How can I help you?`;
+    messageAdd(message, "bot")
+}
 
 const validate = (text) => {
     if(text === ""){
-        console.log('Pusty tekst')
+        console.log('Message cannot be empty')
     }
     else{
         text = text.toLowerCase()
         textTab = text.split(" ")
         checkCommand(textTab)
-        /*if(text === "hi"){
-            const div = document.createElement("div")
-            div.classList.add('message');
-            div.innerHTML = `
-                <span class="user-message">${text}</span>
-            `
-            document.getElementById('mess-box').append(div)
-            let reply = "Hi, how are you?";
-            
-            console.log(reply)
-        }*/
     }
 }
 
@@ -36,3 +29,5 @@ btn.addEventListener('click', () => {
     inputField.value = "";
     validate(text)
 })
+
+firstMessage();

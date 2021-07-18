@@ -15,5 +15,22 @@ const checkCommand = (commandTab) => {
         messageAdd(reply, "bot")
     }
 
+    else if(commandText === "i love you")
+    {
+        let reply = `Awwww, thanks. You are great`;
+        messageAdd(reply, "bot")
+    }
+
+    else if(commandText === "😘")
+    {
+        let reply = `😍 🥰 😘 ❤️`;
+        messageAdd(reply, "bot")
+    }
+
+    else{
+        let reply = `I don't understand. Please try again. 😊`;
+        messageAdd(reply, "bot")
+    }
+
 
 }
