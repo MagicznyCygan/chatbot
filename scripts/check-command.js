@@ -34,6 +34,10 @@ const checkCommand = (commandTab) => {
         messageAdd(reply, "bot")
     }
 
+    else if(commandText === "version" || commandText === "v"){
+        let reply = `My current version is ${config.version}`;
+        messageAdd(reply, "bot")
+    }
     else{
         let reply = `I don't understand. Please try again. 😊`;
         messageAdd(reply, "bot")
