@@ -30,5 +30,6 @@ const scroll = () => {
 }
 const messageSound = () => {
     let audio = new Audio('../media/message.mp3');
+    audio.currentTime = 0;
     audio.play();
 }

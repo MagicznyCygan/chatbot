@@ -27,10 +27,16 @@ const checkCommand = (commandTab) => {
         messageAdd(reply, "bot")
     }
 
+    // ---- Greetings ----
+    else if(userMessages[0].includes(commandText))
+    {
+        let reply = getReply(commandText)
+        messageAdd(reply, "bot")
+    }
+
     else{
         let reply = `I don't understand. Please try again. 😊`;
         messageAdd(reply, "bot")
     }
-
-
+   
 }

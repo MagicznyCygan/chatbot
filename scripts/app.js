@@ -6,6 +6,7 @@ const firstMessage = () => {
     messageAdd(message, "bot")
 }
 
+// ---- Check message ----
 const validate = (text) => {
     if(text === ""){
         console.log('Message cannot be empty')
