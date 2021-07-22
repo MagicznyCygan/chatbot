@@ -37,7 +37,7 @@ const changeChatColor = (color) => {
         localStorage.setItem('chatColor', '#e031a0')
     }
 
-    else if(color === colors[6]){
+    else if(color === colors[7]){
         root.style.setProperty('--user-message-color', '#b336cf')
         localStorage.setItem('chatColor', '#b336cf')
     }
