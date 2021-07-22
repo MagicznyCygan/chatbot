@@ -1,6 +1,10 @@
 const btn = document.getElementById('btn');
 const inputField = document.getElementById('input-field');
 
+let root = document.documentElement;
+
+root.style.setProperty('--user-message-color', config.chatColor, 'important')
+
 const firstMessage = () => {
     let message = `Hi, I'm Leah artificial intelligence. How can I help you?`;
     messageAdd(message, "bot")

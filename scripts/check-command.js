@@ -1,8 +1,9 @@
 const checkCommand = (commandTab) => {
-    
     // ---- Change tab to text ----
     let commandText = commandTab.join(" ")
     messageAdd(commandText, "user")
+
+    // ---- Other variables ----
 
     // ---- Command checker ----
 
@@ -38,6 +39,23 @@ const checkCommand = (commandTab) => {
         let reply = `My current version is ${config.version}`;
         messageAdd(reply, "bot")
     }
+
+    else if(commandTab[0] === "color" && colors.includes(commandTab[1])){
+        changeChatColor(commandTab[1]);
+        let reply = `You change current chat color to ${commandTab[1]}`;
+        messageAdd(reply, "bot")
+    }
+
+    else if(commandText === "colors"){
+        let reply = getColors();
+        messageAdd(reply, "bot")
+    }
+
+    else if(commandText === "last change" || commandText === "changes" || commandText === "news" || commandText === "whats new" || commandText === "what new"){
+        let reply = config.lastChange;
+        messageAdd(reply, "bot")
+    }
+
     else{
         let reply = `I don't understand. Please try again. 😊`;
         messageAdd(reply, "bot")

@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+:root {
+  --user-message-color: #118ab2;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +140,7 @@ body .chat-container .messages-container .user-message {
   padding: 15px 20px;
   border-radius: 8px 0 8px 8px;
   color: white;
-  background-color: #118ab2;
+  background-color: var(--user-message-color);
 }
 
 body .chat-container .input-container {

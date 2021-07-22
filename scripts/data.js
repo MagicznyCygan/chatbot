@@ -1,6 +1,7 @@
 const userMessages = [
     ["hi",'hey','good morning',"hello","good evening"],
-    ['who are you?','i know you?']
+    ['who are you?','i know you?'],
+    ['whats up']
 ]
 const botReplies = [
     ["Hi, how are you?",'Hey, whats up?','Welcome, how was your day?',"Hello, my friend!","Good evening."],
